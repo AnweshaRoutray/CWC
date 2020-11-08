@@ -9,16 +9,14 @@ public class Direction {
 		{
 			System.out.println("Enter The Position where the man moves ");
 			char fp=sc.next().charAt(0);
-           if((ip=='N'&&fp=='S')||(ip=='S'&&fp=='N')||(ip=='E'&&fp=='W')||(ip=='W'&&fp=='E'))
-           {
-        	   ip=fp;
-        	   continue;
-           }
-           else 
-        	   pos++;
-			
-			ip=fp;
-			
+                        if((ip=='N'&&fp=='S')||(ip=='S'&&fp=='N')||(ip=='E'&&fp=='W')||(ip=='W'&&fp=='E'))
+                         {
+        	            ip=fp;
+        	           continue;
+                         }
+                        else 
+        	         pos++;
+			ip=fp;	
 		}
 		if(pos==0||pos==3)
 			System.out.println("Travelling Wasted");
